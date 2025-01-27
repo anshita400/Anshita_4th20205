@@ -1,0 +1,33 @@
+class Employee {
+    String name;
+    double salary;
+
+    public Employee() {
+        name = "Unknown";
+        salary = 0;
+    }
+
+    public Employee(String name) {
+        this.name = name;
+        salary = 5000;
+    }
+
+    public void DisplayEmployeeDetails() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Employee Salary: $" + salary);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee emp1 = new Employee();
+        Employee emp2 = new Employee("John Doe");
+
+        System.out.println("Employee 1 Details:");
+        emp1.DisplayEmployeeDetails();
+        System.out.println();
+
+        System.out.println("Employee 2 Details:");
+        emp2.DisplayEmployeeDetails();
+    }
+}
